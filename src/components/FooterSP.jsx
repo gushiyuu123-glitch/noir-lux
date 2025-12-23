@@ -25,7 +25,7 @@ export default function FooterSP() {
       {/* --- 中身 --- */}
       <div className="relative z-10 max-w-[90%] mx-auto text-center">
 
-        {/* メニュー：縦並び + 余白広め */}
+        {/* メニュー：縦並び */}
         <nav className="mb-12">
           <ul className="flex flex-col items-center gap-5 text-[12px]">
             <li>
@@ -56,12 +56,35 @@ export default function FooterSP() {
         </nav>
 
         {/* コピーライト */}
-        <p className="text-neutral-500 text-[11px] tracking-wide">
+        <p className="text-neutral-500 text-[11px] tracking-wide mb-6">
           © Noir & Lux — Shadow Series
         </p>
+
+    <p className="text-neutral-500 text-[11px] tracking-[0.16em] mb-4">
+    © 2025 Noir & Lux — Shadow Edition
+  </p>
+
+  {/* ---- GUSHIKEN DESIGN link (SP & PC共通) ---- */}
+  <a
+    href="https://gushikendesign.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Visit GUSHIKEN DESIGN Official Website"
+    className="
+      inline-block
+      text-[10px]
+      tracking-[0.18em]
+      text-neutral-500/60
+      hover:text-amber-200/90
+      hover:tracking-[0.25em]
+      transition-all duration-300
+    "
+  >
+    GUSHIKEN DESIGN
+  </a>
       </div>
 
-      {/* 安全領域 + 下余白 */}
+      {/* 安全領域 */}
       <div className="h-[max(24px,env(safe-area-inset-bottom))]" />
     </footer>
   );

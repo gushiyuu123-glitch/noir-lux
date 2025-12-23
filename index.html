@@ -2,14 +2,79 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-        <!-- Google翻訳を完全無効化 -->
-    <meta name="google" content="notranslate" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>noir-lux</title>
+    
+    <!-- Disable Google Translate -->
+    <meta name="google" content="notranslate" />
+
+    <!-- =======================
+         Primary SEO
+    ======================== -->
+    <title>Noir & Lux — Shadows, Light, and Quiet Luxury</title>
+    <meta 
+      name="description"
+      content="Noir & Lux is a quiet luxury design concept expressing contrast between deep shadows and soft light. A minimal, cinematic, high-end visual experience showcasing refined dark aesthetics."
+    />
+    <link rel="canonical" href="https://noir-lux.vercel.app/" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- =======================
+         OGP / SNS
+    ======================== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Noir & Lux" />
+    <meta 
+      property="og:title"
+      content="Noir & Lux — Shadows, Light, and Quiet Luxury"
+    />
+    <meta 
+      property="og:description"
+      content="A cinematic, silent luxury world built from deep blacks and soft diffused light. A refined design concept by Yuto Gushiken."
+    />
+    <meta property="og:url" content="https://noir-lux.vercel.app/" />
+    <meta property="og:image" content="https://noir-lux.vercel.app/ogp/noir-lux.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta 
+      name="twitter:title"
+      content="Noir & Lux — Shadows, Light, and Quiet Luxury"
+    />
+    <meta 
+      name="twitter:description"
+      content="A cinematic, dark, quiet-luxury world expressing tension and stillness."
+    />
+    <meta name="twitter:image" content="https://noir-lux.vercel.app/ogp/noir-lux.png" />
+
+    <!-- =======================
+         JSON-LD (CreativeWork)
+    ======================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Noir & Lux — Shadows, Light, and Quiet Luxury",
+      "url": "https://noir-lux.vercel.app/",
+      "image": "https://noir-lux.vercel.app/ogp/noir-lux.png",
+      "creator": {
+        "@type": "Person",
+        "name": "Yuto Gushiken"
+      },
+      "description": "A dark-luxury, cinematic design world exploring silence and high-end aesthetics.",
+      "keywords": "Dark Luxury, Minimal, Quiet Design, Cinematic, Art Direction"
+    }
+    </script>
+
+    <!-- =======================
+         Favicon
+    ======================== -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   </head>
+
   <body>
     <div id="root"></div>
+
+    <!-- Main Script -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

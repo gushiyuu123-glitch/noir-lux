@@ -8,8 +8,7 @@ export default function Footer() {
         relative overflow-hidden select-none
       "
     >
-
-      {/* ---- 上のフェードライン（高級ブランドの締め） ---- */}
+      {/* ---- 上のフェードライン ---- */}
       <div
         className="
           absolute top-0 left-1/2 -translate-x-1/2
@@ -19,10 +18,9 @@ export default function Footer() {
         "
       />
 
-      {/* ---- 中身 ---- */}
       <div className="relative z-10 max-w-[1200px] mx-auto px-6 text-center">
 
-        {/* メニュー（ミニマル） */}
+        {/* メニュー */}
         <nav className="mb-10">
           <ul className="flex items-center justify-center gap-10 text-[13px]">
             <li>
@@ -53,9 +51,26 @@ export default function Footer() {
         </nav>
 
         {/* コピーライト */}
-        <p className="text-neutral-500 text-[12px] tracking-wider">
+        <p className="text-neutral-500 text-[12px] tracking-wider mb-6">
           © Noir & Lux — Shadow Series
         </p>
+
+        {/* ---- GUSHIKEN DESIGN link ---- */}
+        <a
+          href="https://gushikendesign.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            block
+            text-[11px]
+            tracking-[0.22em]
+            text-neutral-500/60
+            hover:text-amber-200 hover:tracking-[0.28em]
+            transition-all duration-300
+          "
+        >
+          GUSHIKEN DESIGN
+        </a>
       </div>
     </footer>
   );
